@@ -19,5 +19,4 @@
 11. J’ai utilisé git log pour vérifier l’historique des commits, git status pour voir les fichiers prêts à être poussés, et git remote -v pour vérifier le lien vers GitHub.
 
 12. Pour vérifier que les commits ont bien été poussés, j’ai utilisé git log sur GitHub (onglet commits) et j’ai vu mes messages de commit dans l’interface.
-14. Le projet cloné contient le fichier README.md. Les commits présents sont : 'Initial commit', 'Ajout dans README.md', 'Correctif README.md'.
-15. J’ai utilisé git diff f7a7e75 f8138d7 pour voir les différences entre deux commits. La modification observée concerne un correctif dans le fichier README.md.
+13. J’ai cloné le projet avec la commande : git clone https://github.com/PaulineLam24/TP-Git.git
