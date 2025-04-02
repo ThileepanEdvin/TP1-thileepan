@@ -1,0 +1,1 @@
+1. La commande git status permet d’afficher les fichiers suivis ou non, ceux qui sont prêts à être commités ou non. Dans mon cas, elle indique que README.md est un fichier non suivi (untracked).
