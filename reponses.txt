@@ -1,6 +1,23 @@
 1. La commande git status permet d’afficher les fichiers suivis ou non, ceux qui sont prêts à être commités ou non. Dans mon cas, elle indique que README.md est un fichier non suivi (untracked).
+
 2. Après git add, git status montre que les fichiers sont maintenant dans l’index (staging area) et prêts à être commités. Ils ne sont plus marqués comme untracked.
+
 3. La commande git add . envoie les fichiers modifiés ou créés dans l’espace de staging (index), ce qui les prépare à être commités. Ils ne sont pas encore enregistrés dans l’historique Git.
+
 5. La commande git log permet d’afficher l’historique des commits, avec leur hash, auteur, date et message associé.
+
 6. git diff montre les différences entre les fichiers modifiés et ceux dans l’index (staging area). git diff --staged montre les différences entre l’index et le dernier commit. Donc, le premier montre ce qui n’a pas encore été ajouté, le second ce qui est prêt à être commité.
+
 7. git show affiche les détails d’un commit (auteur, date, modifications). git status montre les fichiers modifiés ou en attente de commit. git diff montre les différences non encore ajoutées. git log montre l’historique des commits.
+
+8. Après git add ., git status indique que fichier1.txt et brouillon.txt sont dans l’index et prêts à être commités.
+
+9. La commande git reset brouillon.txt retire le fichier de l’index (staging area), mais il reste dans le dossier. Il repasse en fichier non suivi. Cela agit sur l’espace d’indexation (staging).
+
+10. Pour vérifier que brouillon.txt n’a pas été commit, j’ai utilisé git ls-files. Ce fichier n’apparaît pas dans la liste, donc il n’a pas été ajouté à l’historique Git.
+
+11. J’ai utilisé git log pour vérifier l’historique des commits, git status pour voir les fichiers prêts à être poussés, et git remote -v pour vérifier le lien vers GitHub.
+
+12. Pour vérifier que les commits ont bien été poussés, j’ai utilisé git log sur GitHub (onglet commits) et j’ai vu mes messages de commit dans l’interface.
+14. Le projet cloné contient le fichier README.md. Les commits présents sont : 'Initial commit', 'Ajout dans README.md', 'Correctif README.md'.
+15. J’ai utilisé git diff f7a7e75 f8138d7 pour voir les différences entre deux commits. La modification observée concerne un correctif dans le fichier README.md.
